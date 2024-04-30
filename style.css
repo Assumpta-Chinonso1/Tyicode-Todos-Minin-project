@@ -1,0 +1,94 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#title {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+#todo-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: burlywood;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#todo-form button:hover {
+    background-color: #0056b3;
+}
+
+#todo-list > div {
+    padding: 12px;
+    background-color: #c9b6b6;
+    border-radius: 4px;
+    margin: 25px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.done {
+    background-color: #28a745;
+    color: #7d0c0c;
+    padding: 6px;
+    border-radius: 4px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.done::before {
+    content: "✓";
+    margin-right: 10px;
+}
+
+.done::after {
+    content: "Completed";
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin: 20px;
+    }
+}
